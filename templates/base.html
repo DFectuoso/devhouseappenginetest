@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% if display_post_title %}{{post.title}} || {% endif %}Datachimp</title>
+  </head>
+  <body>
+    <div id="header">
+      <h1>Header</h1>
+    </div>
+    <div id="content">
+      {% block content %}{% endblock %}
+    </div>
+    <script>
+      {% block javascript %}{% endblock %}
+    </script>
+    <div id="footer">
+      <div id="copyright">© 2011 Datachimp</div> 
+    </div>
+  </body>
+</html>
